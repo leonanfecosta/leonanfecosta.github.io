@@ -6,6 +6,7 @@
 .header {
   padding: 2%;
 }
+
 #image-profile {
   width: 270px;
   float: left;
@@ -13,18 +14,19 @@
   height: 270px;
   padding: 10px;
 }
+
 .header-content {
   height: 300px;
   display: inline-flexbox;
   max-width: 100%;
-  /*   position: relative;:
- */
 }
+
 #name {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 200%;
 }
+
 #description {
   /*    position: absolute;*/
   text-align: center;
@@ -34,7 +36,6 @@
   font-size: 20px;
   padding-left: 15%;
   padding-top: 7%;
-
 }
 
 ul li:nth-child(odd):hover {
