@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(79, 79, 79);
+}
+
+.color,
+.selected {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+#black {
+  background-color: black;
+  margin-left: 42%;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+.pixel {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+}
+
+#title {
+  margin-left: 40%;
+  color: white;
+  font-size: 40px;
+}
+
+#pixel-board {
+  margin-left: 42%;
+}
+
+#buttons{
+    margin-left:40%;
+    margin-bottom: 20px;
+}
