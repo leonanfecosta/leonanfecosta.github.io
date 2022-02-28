@@ -1,5 +1,5 @@
-let pixelBoard = document.getElementById('pixel-board');
-let btBlack = document.getElementById('black');
+const pixelBoard = document.getElementById('pixel-board');
+const btBlack = document.getElementById('black');
 
 window.onload = function () {
   defineBlack();
