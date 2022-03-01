@@ -12,20 +12,24 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/c2a28b7f75.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <header id="header-container">
     <p>LOGO</p>
     <nav id="top-menu">
       <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="projects.html"><li>Projetos</li></a>
-        <li>Contato</li>
+        <a href="#profile"><li>Home</li></a>
+        <a href="#project-container"><li>Projetos</li></a>
+        <a href="#contact"><li>Contato</li></a>
       </ul>
     </nav>
   </header>
   <body>
-    <section class="profile-container">
+    <section class="profile-container" id="profile">
       <section class="img-profile">
         <img src="images/perfil-removebg-preview.png" alt="" />
       </section>
@@ -36,8 +40,12 @@
           Universidade Católica de Petrópolis (UCP).
         </p>
         <p>Atualmente estudo para ser Desenvolvedor Web na Trybe!! 🚀</p>
-        <a href="#project-container"
-          ><button class="btn-grad">Meus Projetos</button></a
+        <a
+          href="https://github.com/leonanfecosta/leonanfecosta.github.io/tree/main/projetos"
+          target="_blank"
+          ><button class="btn-grad">
+            <i class="fa-brands fa-github-alt"></i> Meus Projetos
+          </button></a
         >
       </section>
     </section>
@@ -79,6 +87,32 @@
         <li>Tecnologia3</li>
         <li>Tecnologia4</li>
       </ul>
+    </section>
+
+    <section class="contact-container" id="contact">
+      <div class="contact-content">
+        <h4>Entre em contato:</h4>
+      </div>
+
+      <div class="contact-content">
+        <h4>Email</h4>
+        <p>leonanfecosta@gmail.com | leonanfcosta@outlook.com</p>
+      </div>
+
+      <div class="contact-content">
+        <h4>Celular</h4>
+        <p>(00) 00000-0000</p>
+      </div>
+
+      <div class="contact-content">
+        <h4>Redes Sociais</h4>
+        <div class="social-content">
+          <p><i class="fa-brands fa-github"></i></p>
+          <p><i class="fa-brands fa-linkedin"></i></p>
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-facebook"></i></p>
+        </div>
+      </div>
     </section>
   </body>
 
