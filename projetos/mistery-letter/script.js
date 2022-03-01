@@ -8,7 +8,7 @@ const classesTamanho = [`medium`, `big`, `reallybig`];
 const classesRotacao = [`rotateleft`, `rotateright`];
 const classesInclinacao = [`skewleft`, `skewright`];
 
-/*       solução encontrada no StackOverflow  https://pt.stackoverflow.com/questions/73214/criar-uma-combina%C3%A7%C3%A3o-aleatoria-com-classes-css-utilizando-javascript-ou-jquery */
+/*Fonte: https://pt.stackoverflow.com/questions/73214/criar-uma-combina%C3%A7%C3%A3o-aleatoria-com-classes-css-utilizando-javascript-ou-jquery */
 function sortearClasses(array) {
   let aletorio = Math.floor(Math.random() * array.length);
   return array[aletorio];
@@ -67,7 +67,12 @@ function contador() {
   const palavras = inputCarta.value.split(' ');
 
   newP = document.createElement('p');
-  newP.innerHTML = palavras.length;
+
+  if(palavras.length === 1) {
+    newP.innerHTML = "Esta carta possui " + palavras.length + ' palavra!'
+  } else if(palavras.length >= 2){
+    newP.innerHTML = "Esta carta possui " + palavras.length + ' palavras!'
+  }
   newP.id = 'carta-contador';
   divContador.appendChild(newP);
 }
