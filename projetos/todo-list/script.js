@@ -29,12 +29,14 @@ function addColorGray() {
     let tasks = document.querySelectorAll('#lista-tarefas li');
 
     for (let i = 0; i < tasks.length; i += 1) {
-      if (tasks[i].style.backgroundColor === 'gray') {
+      if (tasks[i].style.backgroundColor === 'rgb(230, 230, 230)') {
         tasks[i].style.backgroundColor = 'white';
         tasks[i].setAttribute('id', '');
+        tasks[i].style.border = 'none';
       }
     }
-    event.target.style.backgroundColor = 'gray';
+    event.target.style.backgroundColor = 'rgb(230, 230, 230)';
+    event.target.style.borderRadius = '10px';
     event.target.setAttribute('id', 'selected');
     /*     saveTaskList();
      */
