@@ -3,174 +3,237 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Fjalla One', sans-serif;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
 
-#header-container {
-  display: flex;
-  background-color: #302f2f;
-  color: white;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
+#header-container{
+  background-color: #ECF39E;
   width: 100%;
+  position: fixed;
+  padding: 20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-#header-container p {
-  margin: 0 1%;
+header a {
+  color: #132A13;
+  text-decoration: none;
 }
 
- #top-menu ul {
-   display: flex;
-   margin:0;
- }
-
- #top-menu li {
-  display: inline-block;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
- }
-
- #top-menu li:hover{
-  background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
-  color: black;
-  border-bottom: 1px solid #302f2f;
-  text-decoration: none;
- }
-
- .profile-container{
-   display: flex;
-   align-items: center;
-   justify-content:center;
-   height:100vh;
-   background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
-   text-align: center;
- }
-
- .img-profile{
+header nav {
   display: flex;
-  width: 30vw;
-  height: 50vh;
- }
+}
 
- .info-container{
+header a {
+  text-decoration: none;
+  opacity: 0.8;
+  padding:0 10px;
+  color: #132A13;
+}
+
+header a:hover {
+  opacity: 1;
+}
+
+header a:active , header a:hover , header a:visited{
+  color: inherit;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+.profile {
+  min-height: 100vh;
+  background-color: #132A13;
+  color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  width: 50vw;
-  height: 50vh;
- }
+  justify-content: center;
+  align-items: center;
+}
 
- .profile-container h1 {
-   padding: 1%;
- }
+.profile h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.profile h3 {
+  font-size:25px;
+  margin-bottom:15px;
+  line-height: 1cm;
+}
+
+.profile .btn {
+  background-color: #90A955;
+  text-decoration: none;
+  color: #132A13;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding:20px 50px;
+}
+.btn:hover{
+  background-color: #ECF39E;
+}
 
 .project-container{
-  display: flex;
-  justify-content:center;
+  background-color:white;
+  padding: 100px 50px;
+  display:flex;
+  flex-direction: column;
   align-items: center;
-  height: 60vh;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
 }
 
-.img-project{
-  width: 30vw;
-  height: 15vw;
-  padding: 0 7vw;
+.project-container h3 {
+  font-size:35px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #31572C;
 }
 
-.project-ul{
-  width: 25vw;
-  color: #22d271;
-  line-height: 2em;
-}
-
-.project-ul2{
-  width: 25vw;
-  color: white;
-  line-height: 2em;
-}
-
-.project-container2{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: row-reverse;
-  background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);  
-  height: 60vh;
+.project-container p{
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color:#132A13;
 }
 
 .project-container hr {
-  height: 1vh;
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
   border: none;
-  background-color: #22d271;
-  margin: 2% 0; 
-  padding: 2px;
+  background-color:#132A13
+}
+
+.project-container .grid {
+  width: 100%;
+  display: flex;
+}
+
+.project-container .grid li {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.project-container .grid li i {
+  color: #90A955;
+  font-size:35px;
+  margin-bottom: 30px;
+}
+
+.project-container .grid li h4 {
+  color: #90A955;
+  font-size:25px;
+  margin-bottom: 30px;
+}
+
+.project-container2{
+  background-color:#132A13;
+  padding: 100px 50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container2 h3 {
+  font-size:35px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #ECF39E;
+}
+
+.project-container2 p{
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color:white;
 }
 
 .project-container2 hr {
-  height: 1vh;
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
   border: none;
-  background-color: white;
-  margin: 2% 0; 
-  padding: 2px;
+  background-color:#ECF39E
 }
 
-.contact-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
-  height: 150px;
-}
-
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    margin:0;
-  }
-
-.social-content {
+.project-container2 .grid {
+  width: 100%;
   display: flex;
 }
-.social-content p{
-  margin-right: 5px;
+
+.project-container2 .grid li {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.project-container2 .grid li i {
+  color: #ECF39E;
+  font-size:35px;
+  margin-bottom: 30px;
+}
+
+.project-container2 .grid li h4 {
+  color: #ECF39E;
+  font-size:25px;
+  margin-bottom: 30px;
 }
 
 footer {
   display: flex;
-  justify-content:center;
-  background-color: #302f2f;
-  color: white;
-  padding: 0.6%;
+  flex-direction: column;
+  align-items: center;
+  background-color:#132A13;
+  padding: 50px 0;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   border: none;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: inline-block;
-   text-decoration: none;
- }
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+}
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+footer ul li {
+  margin-right: 10px;
+}
 
+footer ul li:last-child {
+  margin-right: 0;
+}
 
+footer ul li i {
+  color: #ECF39E;
+  font-size: 25px;
+}
+
+footer p {
+  color: #ECF39E;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .profile h1 {
+    font-size: 30px;
+  }
+
+  .profile h3 {
+    font-size: 15px;
+  }
+
+  .project-container .grid {
+    flex-direction: column;
+  }
+
+  .project-container2 .grid {
+    flex-direction: column;
+  }
+
+  footer ul li i {
+    font-size: 35px;
+    margin-right: 30px;
+  }
+};
